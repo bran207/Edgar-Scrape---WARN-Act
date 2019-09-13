@@ -5,7 +5,7 @@ The goal of this project was to see if companies were complying with the Worker 
 
 ### How it works
 1. I gathered a list of all possible CIKs in Edgar to insure our dataset was complete.
-2. A list of terms related to layoffs was created to search against.
+2. A list of terms related to layoffs was created to search against. This list was broken down into two categories: exact matches and terms that needed to be within 3 words of eachother (ex: '**reduction** in **staff**').
 3. I wrote a Python script to retrieve all 8-k's (as a txt document) for each company in Edgar
 4. Each 8-k was searched against the key words previously determined.
 5. If a match was found, the result was exported to a spreadsheet.
